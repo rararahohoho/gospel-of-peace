@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>KakaoTalk Embed</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>Click the image below</strong> gospel of peace </p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('2d5cbde9702f1355bfc338bf45ac83d5');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '초대합니다',
+        description: 'May 2 - May 8',
+        imageUrl:
+          'https://postfiles.pstatic.net/MjAyMjA0MjlfMjUw/MDAxNjUxMjEzMzMxMjI2.-w-f5jhgoU_yOkq32VP4LR9xTqZByTEHL0ptXNqhgq8g.DNbKqMyS_MqQnP_EHFBIdeSz6YiPisl0IdOaXgpAS9Ig.PNG.onmiss146/KakaoTalk_20220428_232047924_01.png?type=w966',
+        link: {
+          mobileWebUrl: 'https://sojunghanday.cafe24.com/card/bs/invit.html',
+          webUrl: 'https://sojunghanday.cafe24.com/card/bs/invit.html',
+        },
+      },
+      
+      buttons: [
+        {
+          title: '자세히보기',
+          link: {
+            mobileWebUrl: 'https://sojunghanday.cafe24.com/card/bs/invit.html',
+            webUrl: 'https://sojunghanday.cafe24.com/card/bs/invit.html',
+          },
+        },
+      ],
+    })
+  }
+</script>
+<!-- www.blackcats4567.com -->
+<!-- When clicking on the image/button, the address should be placed in Kakao Developers' Application> Platform> Web to be displayed successfully when clicked. -->
+  </body>
+</html>
